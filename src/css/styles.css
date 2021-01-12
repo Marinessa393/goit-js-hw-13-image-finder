@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap");
+
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+
+html {
+  box-sizing: border-box;
+  background-image: url("../img/headerBg.jpg");
+  background-size: 100vw, 100vh;
+  background-attachment: fixed;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.header-box {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-family: "Mali", cursive;
+  text-decoration: none;
+  position: relative;
+  width: 80vw;
+  display: block;
+  margin: 9px auto;
+  font-size: 17px;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(3, 3, 3, 0.1);
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 3px 3px 10px #333;
+  background: rgba(3, 3, 3, 0.18);
+}
+
+/* Placeholders */
+::-webkit-input-placeholder {
+  color: #ddd;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: red;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: red;
+}
+:-ms-input-placeholder {
+  color: #333;
+}
+
+ul.gallery {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+}
+
+.photo-card {
+  /* width: calc(100% / 3 - 90px); */
+  width: 400px;
+  height: 350px;
+  margin: 30px;
+  background-color: rgb(231, 229, 229, 0.4);
+  border-radius: 4px;
+}
+
+.image {
+  width: 380px;
+  height: 250px;
+  margin: 10px 10px 20px;
+  display: block;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0;
+  height: 60px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.stats-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #103322;
+  font-family: "Mali", cursive;
+  font-size: 20px;
+}
+
+.stats-item:hover {
+  color: #3e3b0c;
+}
+
+.material-icons {
+  color: inherit;
+}

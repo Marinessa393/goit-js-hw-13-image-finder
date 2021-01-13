@@ -12,12 +12,13 @@ gallery.addEventListener("click", onOpenModal);
 function onSearch(e) {
   e.preventDefault();
   imageSearch.searchQuery = e.currentTarget.elements.query.value;
-  if (imageSearch.searchQuery === "")
-    return alert("Hmm... here is nothing. Try to search again");
+  if (imageSearch.searchQuery === "") return;
+  // return alert("Hmm... here is nothing. Try to search again");
 
   imageSearch.resetPage();
   clearContainer();
-  imageSearch.fetchImg().then(appendImgMarcup);
+  // imageSearch.fetchImg().then(appendImgMarcup);
+  observer.observe(scroll);
 }
 
 function appendImgMarcup(hits) {
@@ -42,4 +43,3 @@ const onTry = (entries) => {
 const observer = new IntersectionObserver(onTry, {
   rootMargin: "160px",
 });
-observer.observe(scroll);

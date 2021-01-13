@@ -10,6 +10,7 @@ html {
   background-image: url("../img/headerBg.jpg");
   background-size: 100vw, 100vh;
   background-attachment: fixed;
+  position: relative;
 }
 
 *,
@@ -24,10 +25,18 @@ body {
 }
 
 .header-box {
+  background-image: url("../img/headerBg.jpg");
+  background-size: 100vw;
+  background-attachment: fixed;
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
 }
 
 input {
@@ -72,6 +81,7 @@ input:focus {
 }
 
 ul.gallery {
+  margin-top: 15vh;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -79,6 +89,7 @@ ul.gallery {
   flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
+  overflow: hidden;
 }
 
 .photo-card {

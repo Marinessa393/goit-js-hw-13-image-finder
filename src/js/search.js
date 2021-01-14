@@ -34,7 +34,7 @@ const onTry = (entries) => {
     if (entry.isIntersecting && imageSearch.query !== "") {
       imageSearch.fetchImg().then((hits) => {
         appendImgMarcup(hits);
-        imageSearch.incrementPage();
+        // imageSearch.incrementPage();
       });
     }
   });
